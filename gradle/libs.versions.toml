@@ -30,6 +30,7 @@ fragment-ktx = "1.9.1"
 gson = "2.14.0"
 guava = "33.7.1-android"
 jbcrypt = "0.4"
+junit = "4.13.2"
 kotlin = "2.4.20"
 kotlinSerialization = "2.4.20"
 kotlinxSerializationCore = "1.11.0"
@@ -39,6 +40,7 @@ localbroadcastmanager = "1.1.0"
 nav3Core = "1.1.3"
 preference-ktx = "1.2.1"
 recyclerview = "1.4.0"
+robolectric = "4.16.1"
 stream = "1.2.2"
 volley = "1.2.1"
 zhanghai-compose-preference = "2.2.0"
@@ -67,6 +69,7 @@ fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragm
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 jbcrypt = { module = "org.mindrot:jbcrypt", version.ref = "jbcrypt" }
+junit = { module = "junit:junit", version.ref = "junit" }
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
 lingala-zip4j = { module = "net.lingala.zip4j:zip4j", version.ref = "lingala-zip4j" }
 localbroadcastmanager = { module = "androidx.localbroadcastmanager:localbroadcastmanager", version.ref = "localbroadcastmanager" }
@@ -74,6 +77,7 @@ navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", ver
 navigation3-ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "nav3Core" }
 preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference-ktx" }
 recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 stream = { module = "com.annimon:stream", version.ref = "stream" }
 volley = { module = "com.android.volley:volley", version.ref = "volley" }
 zhanghai-compose-preference = { module = "me.zhanghai.compose.preference:preference", version.ref = "zhanghai-compose-preference" }

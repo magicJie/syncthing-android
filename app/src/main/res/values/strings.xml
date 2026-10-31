@@ -552,6 +552,9 @@
  
     <string name="start_into_web_gui_summary">When starting the app, open web GUI instead of the main screen</string>
 
+    <string name="hide_from_recents_title">Hide from recents</string>
+    <string name="hide_from_recents_summary">Hide the app from the recent apps list. Open it from the launcher or notification; background synchronization keeps running.</string>
+
     <string name="pref_language_default">Default Language</string>
 
     <string name="folder_type_send_receive">Send &amp; Receive</string>

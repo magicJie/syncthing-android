@@ -21,6 +21,7 @@ import com.nutomic.syncthingandroid.util.ConfigRouter;
 import com.nutomic.syncthingandroid.util.ConfigXml;
 import com.nutomic.syncthingandroid.util.FileUtils;
 import com.nutomic.syncthingandroid.util.PermissionUtil;
+import com.nutomic.syncthingandroid.util.TaskRecents;
 import com.nutomic.syncthingandroid.util.Util;
 
 import java.io.File;
@@ -1475,6 +1476,8 @@ public class SyncthingService extends Service {
                  * apply the commit.
                  */
                 failSuccess = failSuccess && editor.commit();
+                // Older backups may omit this key; clear() sends no removal callback on Android 6–10.
+                TaskRecents.apply(this);
             } else {
                 Log.e(TAG, "importConfig: Invalid object stream");
             }

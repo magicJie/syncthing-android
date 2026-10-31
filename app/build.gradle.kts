@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.zxing.android.embedded) { isTransitive = false }
     implementation(libs.zxing.core)
     ksp(libs.dagger.compiler)
+    testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
 }
 
 android {
@@ -55,6 +57,10 @@ android {
 
     buildFeatures {
         compose = true
+    }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
     }
 
     defaultConfig {
